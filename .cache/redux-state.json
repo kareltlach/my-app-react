@@ -16,7 +16,7 @@
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "dd32ed151b34f76b20ce7ccabf2fd64b",
+        "contentDigest": "ce915d6e93e822bc1f3b44e38f3c2abe",
         "description": "Plugin dev-404-page",
         "owner": "internal-data-bridge"
       }
@@ -318,11 +318,109 @@
         "owner": "internal-data-bridge"
       }
     },
+    "Plugin gatsby-source-contentful": {
+      "resolve": "/Users/karel/Documents/my-app/node_modules/gatsby-source-contentful",
+      "id": "Plugin gatsby-source-contentful",
+      "name": "gatsby-source-contentful",
+      "version": "1.3.54",
+      "pluginOptions": {
+        "plugins": [],
+        "spaceId": "08oh62yt4msg",
+        "accessToken": "d003990d31d0b7da281809de5102b9e42e7830e0d4e5f92bee2c134b3bf54f82"
+      },
+      "nodeAPIs": [
+        "setFieldsOnGraphQLNodeType",
+        "sourceNodes",
+        "onPreBootstrap",
+        "onPreExtractQueries"
+      ],
+      "browserAPIs": [],
+      "ssrAPIs": [],
+      "pluginFilepath": "/Users/karel/Documents/my-app/node_modules/gatsby-source-contentful",
+      "packageJson": {
+        "name": "gatsby-source-contentful",
+        "description": "Gatsby source plugin for building websites using the Contentful CMS as a data source",
+        "version": "1.3.54",
+        "keywords": [
+          "gatsby",
+          "gatsby-plugin",
+          "gatsby-source-plugin"
+        ],
+        "author": {
+          "name": "Marcus Ericsson",
+          "email": "mericsson@gmail.com",
+          "url": "mericsson.com"
+        },
+        "license": "MIT",
+        "dependencies": [
+          {
+            "name": "axios",
+            "version": "^0.16.2"
+          },
+          {
+            "name": "babel-runtime",
+            "version": "^6.26.0"
+          },
+          {
+            "name": "base64-img",
+            "version": "^1.0.3"
+          },
+          {
+            "name": "bluebird",
+            "version": "^3.5.0"
+          },
+          {
+            "name": "contentful",
+            "version": "^6.1.0"
+          },
+          {
+            "name": "deep-map",
+            "version": "^1.5.0"
+          },
+          {
+            "name": "fs-extra",
+            "version": "^4.0.2"
+          },
+          {
+            "name": "gatsby-plugin-sharp",
+            "version": "^1.6.48"
+          },
+          {
+            "name": "json-stringify-safe",
+            "version": "^5.0.1"
+          },
+          {
+            "name": "lodash",
+            "version": "^4.17.4"
+          },
+          {
+            "name": "qs",
+            "version": "^6.4.0"
+          }
+        ],
+        "devDependencies": [
+          {
+            "name": "cross-env",
+            "version": "^5.0.5"
+          }
+        ],
+        "peerDependencies": [],
+        "optionalDependecies": [],
+        "bundledDependecies": []
+      },
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "contentDigest": "deceb335e3f59102b66fd790c3601ae8",
+        "type": "SitePlugin",
+        "owner": "internal-data-bridge"
+      }
+    },
     "Plugin default-site-plugin": {
       "resolve": "/Users/karel/Documents/my-app",
       "id": "Plugin default-site-plugin",
       "name": "default-site-plugin",
-      "version": "c1d3614c5984e497e5ef32e9654b1be8",
+      "version": "5672b549ddd779f96e51c29dcbb03c67",
       "pluginOptions": {
         "plugins": []
       },
@@ -353,6 +451,10 @@
             "version": "^2.0.10"
           },
           {
+            "name": "gatsby-source-contentful",
+            "version": "^1.3.54"
+          },
+          {
             "name": "react-anchor-link-smooth-scroll",
             "version": "^1.0.11"
           },
@@ -378,7 +480,7 @@
       "parent": "SOURCE",
       "children": [],
       "internal": {
-        "contentDigest": "30f3f1de920cf1354c7ae1b15c2324de",
+        "contentDigest": "edcd24096d72247301b85d6e4e86a9aa",
         "type": "SitePlugin",
         "owner": "internal-data-bridge"
       }
@@ -391,17 +493,76 @@
       },
       "port": "8000",
       "host": "localhost",
-      "pathPrefix": "",
-      "polyfill": true,
-      "buildTime": "2018-11-01T02:23:31.262Z",
+      "buildTime": "2018-11-01T02:57:13.846Z",
       "id": "Site",
       "parent": "SOURCE",
       "children": [],
       "internal": {
-        "contentDigest": "f24c53496e64ea30aae3fc369ae39e5b",
+        "contentDigest": "6b66a3373b113a2cc4552b9bd9706432",
         "type": "Site",
         "owner": "internal-data-bridge"
       }
+    },
+    "Link": {
+      "id": "Link",
+      "parent": null,
+      "children": [],
+      "name": "Link",
+      "displayField": "title",
+      "description": "",
+      "internal": {
+        "type": "ContentfulContentType",
+        "contentDigest": "4d6413a6137bc10d2af222f0161c189a",
+        "owner": "gatsby-source-contentful"
+      }
+    },
+    "c28nbXBKAW0QYK0yKik2mSm": {
+      "title": "Experiência",
+      "url": "/experiencia",
+      "id": "c28nbXBKAW0QYK0yKik2mSm",
+      "contentful_id": "28nbXBKAW0QYK0yKik2mSm",
+      "createdAt": "2018-11-01T02:46:31.510Z",
+      "updatedAt": "2018-11-01T02:46:31.510Z",
+      "parent": "Link",
+      "children": [],
+      "internal": {
+        "type": "ContentfulLink",
+        "contentDigest": "df3b5651cec0e81215f8080adf813b8c",
+        "owner": "gatsby-source-contentful"
+      },
+      "node_locale": "en-US"
+    },
+    "c4zLeBbs6IUieMKu6EIesm4": {
+      "title": "Sobre",
+      "url": "/sobre",
+      "id": "c4zLeBbs6IUieMKu6EIesm4",
+      "contentful_id": "4zLeBbs6IUieMKu6EIesm4",
+      "createdAt": "2018-11-01T02:46:17.868Z",
+      "updatedAt": "2018-11-01T02:46:17.868Z",
+      "parent": "Link",
+      "children": [],
+      "internal": {
+        "type": "ContentfulLink",
+        "contentDigest": "7e27f9749db301fef2e20751e17319ae",
+        "owner": "gatsby-source-contentful"
+      },
+      "node_locale": "en-US"
+    },
+    "c4xq0BtdQNGUKUISIeKK448": {
+      "title": "Home",
+      "url": "/",
+      "id": "c4xq0BtdQNGUKUISIeKK448",
+      "contentful_id": "4xq0BtdQNGUKUISIeKK448",
+      "createdAt": "2018-11-01T02:45:16.497Z",
+      "updatedAt": "2018-11-01T02:45:56.097Z",
+      "parent": "Link",
+      "children": [],
+      "internal": {
+        "type": "ContentfulLink",
+        "contentDigest": "95451f8ad8f7b5f7ef228b952299248a",
+        "owner": "gatsby-source-contentful"
+      },
+      "node_locale": "en-US"
     },
     "SitePage /404/": {
       "layout": "index",
@@ -419,7 +580,7 @@
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "30d422ddaa1e9bae56d98cef66811122",
+        "contentDigest": "5fe872564cc09cbe7279b78f7a271317",
         "description": "Plugin component-page-creator",
         "owner": "internal-data-bridge"
       }
@@ -440,7 +601,7 @@
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "900e844e3c8e411cf11b6c34476266d5",
+        "contentDigest": "81b9317921dd9a500e6386f2bd2864f3",
         "description": "Plugin component-page-creator",
         "owner": "internal-data-bridge"
       }
@@ -461,7 +622,7 @@
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "c066b43ba8d32282d390cdadea720e1d",
+        "contentDigest": "2d430c2a885524edd47d3efb136b1ee1",
         "description": "Plugin component-page-creator",
         "owner": "internal-data-bridge"
       }
@@ -482,15 +643,19 @@
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "128b4113f9a6dacc7331e23991957af4",
+        "contentDigest": "16565409c345f4d22ac2843bb12ce50a",
         "description": "Plugin prod-404",
         "owner": "internal-data-bridge"
       }
     }
   },
   "status": {
-    "plugins": {},
-    "PLUGINS_HASH": "20da1d2f40149823e089f5a56e65383e"
+    "plugins": {
+      "gatsby-source-contentful": {
+        "08oh62yt4msg-master": "w5ZGw6JFwqZmVcKsE8Kow4grw45QdyZ7wp3ClCnDnkEpfcKmwrnCpcO1w6nCiMO9TzR8UsOhw7ARccKgP8KcdFhxwrHCqnbCksOdwo7DkAwVw4DCiEBzQMOfwqLCoWnDosOtVcOLw63DhHMFGlkowrlFYg0qwoU"
+      }
+    },
+    "PLUGINS_HASH": "d07460fe2c80519652d5beef8f06984f"
   },
   "componentDataDependencies": {
     "nodes": {
