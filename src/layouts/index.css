@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css?family=Niramit|Open+Sans');
+
+/* desktop */
+body {
+  font-family: sans-serif;
+  margin: 0;
+  font-size: 16px;
+  /*-webkit-font-smoothing: antialiased;*/
+
+}
+
+a {
+  color: #bd00bd;
+  font-weight: 600;
+  text-decoration: none
+}
+
+.Hero {
+  background: url('../images/wallpaper.jpg');
+  height: 800px;
+  background-size: cover;
+  background-position: center; 
+  position: relative;
+  z-index: 1;
+  /*animation: HeroAnimation;
+  animation-duration: 4s;
+  animation-fill-mode: forwards;*/
+}
+
+.HeroGroup {
+  margin: 0 auto;
+  max-width: 500px;
+  padding: 100px 50px;
+  text-align: center;
+}
+
+.Hero h1 {
+  font-family: sans-serif;
+  margin: 60px 0 20px 0;
+  color: white;
+  font-size: 80px;
+  font-weight: bold;
+  line-height: 1.1;
+  opacity: 0;
+  animation: HeroAnimation;
+  animation-duration: 1.2s;
+  animation-fill-mode: forwards;
+  animation-timing-function: cubic-bezier(0.2, 0.8, 0.2, 1);
+  transition: 2s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+
+.Hero p {
+  font-weight: 300;
+  margin: 50px 0 48px 0;
+  color: rgba(255, 255, 255, 0.75);
+  font-size: 22px;
+  line-height: 1.5;
+  opacity: 0;
+  animation: HeroAnimation;
+  animation-duration: 1s;
+  animation-delay: 0s;
+  animation-fill-mode: forwards;
+  transition: 2s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+
+.Hero a {
+  font-size: 14px;
+  font-weight: bold;
+  color: white;
+  text-transform: uppercase;
+  background: rgba(0, 0, 0, 0.7);
+  padding: 12px 32px;
+  border: 1px solid rgba(255, 255, 255, 0.6);
+  border-radius: 30px;
+  transition: 2s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+
+.Hero a:hover {
+  background: white;
+  color: black;
+}
+
+/* logos */
+.Hero .Logos {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 40px;
+  margin: 80px 0 0 0;
+  left: 0;
+  justify-items: center;
+  z-index: 2;
+  position: relative;
+}
+.Hero .Logos figure{
+  margin: 0;
+}
+
+/* svg footer */
+.Hero svg {
+position: absolute;
+left: 0;
+bottom: 0;
+z-index:-10;
+}
+
+/* cards */
+.CardGroup {
+  margin: 50px 40px 100px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 60px;
+  justify-items: center;
+}
+
+/* secttion title */
+.Cards h2{
+  margin: 50px 20px;
+  font-size: 44px;
+  text-align: center;
+  font-weight: 800;
+  background: linear-gradient(104deg, #000 0%, #0739c2 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+}
+
+
+
+
+/* mobile */
+@media (max-width: 1060px) {
+  .CardGroup {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+
+@media (max-width: 640px) {
+  .HeroGroup {
+    padding: 100px 20px;
+  }
+  .Hero h1 {
+    font-size: 60px;
+  }
+  .Hero p {
+    font-size: 16px;
+  }
+
+  .Hero .Logos {
+    margin: 80px auto;
+    max-width: 300px;
+    align-items: center;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .CardGroup {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+}
+
+
+/* animation */
+@keyframes HeroAnimation {
+  0% {
+    opacity: 0;
+    transform: translateY(80px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+
+}

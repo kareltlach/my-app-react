@@ -1,0 +1,71 @@
+/* desktop */
+.Header {
+    position: fixed;
+    width: 100%;
+    padding: 50px 0;
+    z-index: 100;
+    background-color: rgba(#000, #000, #000, 1);
+    transition: 0.8s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+
+.HeaderScrolled {
+    background: rgba(0,0,0, 0.4);
+    padding: 15px 0;
+    backdrop-filter: blur(10px);
+}
+
+.HeaderGroup {
+    max-width: 800px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(5, auto);
+    align-items: center;
+    justify-items: center;
+}
+
+.Header a {
+    color: white;
+    font-weight: 600;
+    transition: cubic-bezier(0.2, 0.8, 0.2, 1);
+    transition-duration: 2s;
+}
+
+.Header a:hover {
+    opacity: 1;
+    transform: translateY(-4px);
+}
+
+.Header button{
+    padding: 8px 20px;
+    font-size: 14px;
+    font-weight: bold;
+    background-color: rgb(76, 183, 233);
+    color: rgb(10, 56, 77);
+    border-radius: 20px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.Header button:hover{
+    background: #262626;
+    color: white;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, .25);
+    opacity: 1;
+    /*transform: translateY(-3px);*/
+}
+
+/* mobile */
+@media (max-width: 640px){
+    .Header{
+        padding: 15px 0;
+    }
+    .HeaderGroup{
+        grid-template-columns: repeat(4, auto)
+    }
+    /* esconde a quarta coluna */
+    .Header a:nth-child(4){
+        display: none;
+    }
+}
