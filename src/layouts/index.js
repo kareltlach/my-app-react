@@ -3,6 +3,7 @@ import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
 import Header from '../components/header'
 import './index.css'
+import Footer from '../components/Footer';
 
 
 const Layout = ({ children, data }) => (
@@ -17,6 +18,11 @@ const Layout = ({ children, data }) => (
 
     <Header />
     {children()}
+      
+      
+      <Footer data={data}>
+        Texto lorem ipsum dolor sit amet. <a href="mailto:kareltlach@gmail.com">E-mail</a>
+      </Footer>
   
     
   </div>
@@ -37,5 +43,16 @@ export const query = graphql`
         keywords
       }
     }
+
+    allContentfulLink(sort: {fields: [createdAt], order: ASC }) {
+      edges {
+        node {
+          title
+          url
+          createdAt
+        }
+      }
+    }
+
   }
 `
