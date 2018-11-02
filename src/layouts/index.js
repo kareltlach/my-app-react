@@ -21,7 +21,7 @@ const Layout = ({ children, data }) => (
       
       
       <Footer data={data}>
-        Texto lorem ipsum dolor sit amet. <a href="mailto:kareltlach@gmail.com">E-mail</a>
+        Precisa de ajuda? <a href="mailto:kareltlach@gmail.com">Fale comigo</a>
       </Footer>
   
     

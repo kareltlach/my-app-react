@@ -1,0 +1,43 @@
+
+
+{
+    "empresas": [
+        {
+            "title": "ViaVarejo",
+            "data": "ABR/18 - ATUAL",
+            "text": "Responsabilidades <br \/> Teste",
+            "image": "https://cl.ly/1U1F170x3D0L/download/logo-react-small.png"
+        },
+        {
+            "title": "Webmotors",
+            "data": "JUN/17 - ABR/18",
+            "text": "Processo de pesquisa centrada nas necessidades do usuário",
+            "image": "https://cl.ly/1U1F170x3D0L/download/logo-react-small.png"
+        },
+        {
+            "title": "SKY",
+            "data": "JUN/17 - ABR/18",
+            "text": "Processo de pesquisa centrada nas necessidades do usuário",
+            "image": "https://cl.ly/1U1F170x3D0L/download/logo-react-small.png"
+        },
+        {
+            "title": "UOL",
+            "data": "JUN/17 - ABR/18",
+            "text": "Processo de pesquisa centrada nas necessidades do usuário",
+            "image": "https://cl.ly/1U1F170x3D0L/download/logo-react-small.png"
+        },
+        {
+            "title": "Groove Marketing",
+            "data": "JUN/17 - ABR/18",
+            "text": "Processo de pesquisa centrada nas necessidades do usuário",
+            "image": "https://cl.ly/1U1F170x3D0L/download/logo-react-small.png"
+        },
+        {
+            "title": "UOL",
+            "data": "JUN/17 - ABR/18",
+            "text": "Processo de pesquisa centrada nas necessidades do usuário",
+            "image": "https://cl.ly/1U1F170x3D0L/download/logo-react-small.png"
+        }
+
+    ]
+}

@@ -16,6 +16,12 @@ const Text = styled.p`
 `
 const Button = styled.button`
     justify-self: center;
+    padding: 20px;
+    border-radius: 20px;
+    border: none;
+    font-size: 16px;
+    background: #fff;
+
 
 `
 const LinkGroup = styled.div`
@@ -34,8 +40,8 @@ const Copyright = styled.div`
 
 const Footer = ({data, children}) => (
     <FooterGroup>
-        <Text>Testando lorem ipsum</Text>
-        <Button>Link</Button>
+        <Text></Text>
+        <Button>Fale comigo</Button>
         <LinkGroup>
 
             {/* contentful */}

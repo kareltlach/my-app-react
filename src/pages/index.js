@@ -4,39 +4,50 @@ import Card from '../components/Card'
 import Wave from '../components/Wave'
 import Section from '../components/Section'
 import staticdata from '../../staticdata.json'
+import staticdataexp from '../../staticdata-experiencia.json';
 import Cell from '../components/Cell'
+import CellExperiencia from '../components/CellExperiencia'
 import styled from 'styled-components'
-//import AnchorLink from 'react-anchor-link-smooth-scroll'
-
 
 
 // css
 const SectionCaption = styled.p`
   font-weight: 600;
-  font-size: 18px;
+  font-size: 22px;
   text-transform: uppercase;
   color: #94A4BA;
   text-align: center;
 `
 
 const SectionCellGroup = styled.div`
-  max-width: 800px;
-  margin: 0 auto 100px;
+  margin: 0 auto;
+  width:960px;
   border: none;
-  padding: 0 20px 0 20px;
+  padding: 0 0 0 0;
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-column-gap: 20px;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 40px;
 
-  @media (max-width: 800px) {
+  @media (max-width: 767px) {
     grid-template-columns: repeat(1, 1fr);
+    left: 24px;
+    margin: 0 auto;
+    grid-column-gap: 0px;
+    position: relative;
   }
+
+  @media (min-width: 768px) and (max-width: 960px) {
+    grid-template-columns: repeat(2, 1fr);
+    margin: 0 auto;
+    grid-column-gap: 0px;
+  } 
 `
 
 
-
+//const
 const IndexPage = () => (
   <div>
+    {/* sobre */}
     <div id="Sobre" className="Hero">
 
       <div className="HeroGroup">
@@ -68,6 +79,7 @@ const IndexPage = () => (
       </div>
     </div>
 
+    {/* portifolio */}
     <div id="Portifolio" className="Cards">
       <h2>Alguns trabalhos desenvolvidos</h2>
         <div className="CardGroup">
@@ -104,37 +116,37 @@ const IndexPage = () => (
         </div>
     </div>
 
-    
+
+    {/* processos */}
     <Section
-      image={require('../images/wallpaper-k1.jpg')}
-      logo={require('../images/logo-sketch.png')}
+      image={require('../images/wallpaper.jpg')}
+      // logo={require('../images/logo-sketch.png')}
       title="Processo criativo"
       text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc leo metus, ullamcorper ut nisl vel, suscipit tincidunt libero. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Integer sem augue, pretium ac est nec, auctor ornare purus. In hac habitasse platea dictumst." />
 
     
-    <SectionCaption>processos e metodologias</SectionCaption>
+    {/* <SectionCaption>processos e metodologias</SectionCaption> */}
     <SectionCellGroup>
-   
-    {staticdata.cells.map(cell => (
-      <Cell title={cell.title} image={cell.image} text={cell.text}  />
-))}
-    
+      {/* json */}
+      {staticdata.cells.map(cell => (
+        <Cell title={cell.title} image={cell.image} text={cell.text}  />
+      ))}
     </SectionCellGroup>
 
+    {/* experiência */}
      <Section
-      image={require('../images/wallpaper.jpg')}
+      image={require('../images/wallpaper-k1.jpg')}
       logo={require('../images/logo-invision.png')}
       title="Experiência"
       text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc leo metus, ullamcorper ut nisl vel, suscipit tincidunt libero. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Integer sem augue, pretium ac est nec, auctor ornare purus. In hac habitasse platea dictumst." />
 
-   
-    <SectionCaption>processos e metodologias</SectionCaption>
+    {/* experiência */}
+    {/* <SectionCaption>por onde andei</SectionCaption> */}
     <SectionCellGroup>
-    
-    {staticdata.cells.map(cell => (
-      <Cell title={cell.title} image={cell.image} text={cell.text}  />
-))}
-    
+      {/* json */}
+      {staticdataexp.empresas.map(empresas => (
+        <CellExperiencia title={empresas.title} data={empresas.data} image={empresas.image} text={empresas.text}  />
+      ))}
     </SectionCellGroup>
 
   </div>

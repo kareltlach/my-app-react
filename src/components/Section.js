@@ -4,10 +4,10 @@ import Wave from './Wave'
 
 // css
 const SectionGroup = styled.div`
-    margin: 100px 0 0;
+    margin: 0;
     background: url(${props => props.image});
     background-size: cover;
-    height: 720px;
+    height: 600px;
     display: grid;
     grid-template-rows: 300px auto;
     grid-gap: 20px;
@@ -25,8 +25,8 @@ const SectionLogo = styled.img`
 `
 
 const SectionTitleGroup = styled.div`
-    max-width: 800px;
-    margin: 0 40px;
+    max-width: 1000px;
+    margin: 240px 40px;
     display: grid;
     grid-gap: 20px;
     grid-template-columns: 300px auto;
@@ -84,7 +84,7 @@ const Section = props => (
         <WaveBottom><Wave /></WaveBottom>
         <WaveTop><Wave /></WaveTop>
 
-        <SectionLogo src={props.logo} />
+        {/* <SectionLogo src={props.logo} /> */}
         <SectionTitleGroup>
             <SectionTitle>{props.title}</SectionTitle>
             <SectionText>{props.text}</SectionText>

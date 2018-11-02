@@ -1,4 +1,11 @@
 /* desktop */
+
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+    color: #233656;
+    line-height: 1.4;
+}
 .Header {
     position: fixed;
     width: 100%;
