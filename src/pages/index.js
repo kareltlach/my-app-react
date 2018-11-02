@@ -85,32 +85,32 @@ const IndexPage = () => (
         <div className="CardGroup">
           <Card
           title="Projeto 1"
-          text="App do lojista"
+          text="Lorem ipsum"
           image={require('../images/wallpaper.jpg')}
           />
           <Card
           title="Projeto 2"
-          text="Dashboard do lojista"
+          text="Lorem ipsum dolor"
           image={require('../images/wallpaper2.jpg')}
           />
           <Card
           title="Projeto 3"
-          text="Dashboard"
+          text="Lorem ipsum dolor sit"
           image={require('../images/wallpaper3.jpg')}
           />
           <Card
           title="Projeto 4"
-          text="Home site 2014"
+          text="Lorem ipsum dolor sit amet"
           image={require('../images/wallpaper4.jpg')}
           />
           <Card
           title="Projeto 5"
-          text="Banda Larga"
+          text="Lorem ipsum dolor sit amet"
           image={require('../images/wallpaper3.jpg')}
           />
           <Card
           title="Projeto 6"
-          text="9 telas"
+          text="Lorem ipsum dolor sit amet"
           image={require('../images/wallpaper4.jpg')}
           />
         </div>

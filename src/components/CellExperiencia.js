@@ -6,8 +6,9 @@ const CellGroup = styled.div`
     grid-template-columns: 60px auto;
     grid-gap: 25px;
     align-items: center;
-    min-width: 320px;
+    min-width: 360px;
     position: relative;
+    margin-bottom: 40px;
 `
 
 const CellImage = styled.div`
@@ -34,7 +35,7 @@ const CellData = styled.div`
     padding: 0 0 0 0;
     margin: 0;
     position: relative;
-    top: -46px;
+    top: -50px;
 
 `
 
