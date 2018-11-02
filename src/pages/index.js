@@ -1,13 +1,20 @@
 import React from 'react'
 import Link from 'gatsby-link'
+
 import Card from '../components/Card'
 import Wave from '../components/Wave'
 import Section from '../components/Section'
-import staticdata from '../../staticdata.json'
-import staticdataexp from '../../staticdata-experiencia.json';
 import Cell from '../components/Cell'
 import CellExperiencia from '../components/CellExperiencia'
+
 import styled from 'styled-components'
+import ReallySmoothScroll from 'really-smooth-scroll';
+
+import staticdata from '../../staticdata.json'
+import staticdataexp from '../../staticdata-experiencia.json';
+
+// smooth scrool
+ReallySmoothScroll.shim();
 
 
 // css
@@ -20,12 +27,11 @@ const SectionCaption = styled.p`
 `
 
 const SectionCellGroup = styled.div`
-  margin: 0 auto;
-  width:960px;
-  border: none;
-  padding: 0 0 0 0;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  position: relative;
+  width:700px;
+  margin: 0 auto;
+  grid-template-columns: repeat(2, 1fr);
   grid-column-gap: 40px;
 
   @media (max-width: 767px) {
@@ -58,19 +64,19 @@ const IndexPage = () => (
           {/* Logos */}
           <div className="Logos">
           <figure>
-            <img class="parallax" width="60px" data-center="0.2" data-intensity="10" data-safe-height="0.2" src={require('../images/logo-sketch.png')} />
+            <img width="60px" data-center="0.2" data-intensity="10" data-safe-height="0.2" src={require('../images/logo-sketch.png')} />
           </figure>
 
           <figure>
-            <img class="parallax" width="60px"  src={require('../images/logo-framer.png')} />
+            <img width="60px"  src={require('../images/logo-framer.png')} />
           </figure>
 
           <figure>
-            <img class="parallax" width="60px"  src={require('../images/logo-invision.png')} />
+            <img width="60px"  src={require('../images/logo-invision.png')} />
           </figure>
 
           <figure>
-            <img class="parallax" width="60px"  src={require('../images/logo-react.png')} />
+            <img width="60px"  src={require('../images/logo-react.png')} />
           </figure>
           </div>
           {/* onda */}
@@ -81,7 +87,7 @@ const IndexPage = () => (
 
     {/* portifolio */}
     <div id="Portifolio" className="Cards">
-      <h2>Alguns trabalhos desenvolvidos</h2>
+      <h2>Alguns projetos desenvolvidos</h2>
         <div className="CardGroup">
           <Card
           title="Projeto 1"
@@ -121,7 +127,7 @@ const IndexPage = () => (
     <Section
       image={require('../images/wallpaper.jpg')}
       // logo={require('../images/logo-sketch.png')}
-      title="Processo criativo"
+      title="Processo e etapas"
       text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc leo metus, ullamcorper ut nisl vel, suscipit tincidunt libero. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Integer sem augue, pretium ac est nec, auctor ornare purus. In hac habitasse platea dictumst." />
 
     

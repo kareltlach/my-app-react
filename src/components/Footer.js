@@ -1,47 +1,52 @@
 import React from 'react'
 import styled from 'styled-components'
+import ButtonK from './ButtonK';
 
 const FooterGroup = styled.div`
-    background: #cccccc;
-    padding: 50px 0;
+    background: #262626;
+    padding: 80px 0 20px 0;
     display: grid;
-    grid-gap: 20px;
+    grid-gap: 0px;
+    position: relative;
+    text-align: center;
 `
 const Text = styled.p`
-    font-size: 24px;
+    font-size: 14px;
     font-weight: 600;
     max-width: 500px;
     margin: 0 auto;
+    padding: 0 0 30px 0;
+    color: white;
 
 `
-const Button = styled.button`
-    justify-self: center;
-    padding: 20px;
-    border-radius: 20px;
-    border: none;
-    font-size: 16px;
-    background: #fff;
 
-
-`
 const LinkGroup = styled.div`
     width: 500px;
     margin: 50px auto;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 20px;
+    color: 
+   
 
 `
+
 const Copyright = styled.div`
     margin: 0 auto;
-    padding: 0 20px;
+    padding: 30px 0 0 0;
+    color: white;
+    text-transform: uppercase;
+    font-size: 10px;
+    opacity: 0.2;
 `
+
 
 
 const Footer = ({data, children}) => (
     <FooterGroup>
-        <Text></Text>
-        <Button>Fale comigo</Button>
+        <Text>Obrigado por visitar e apreciar meu site</Text>
+        <ButtonK label="Possui dúvidas?" />
+        
         <LinkGroup>
 
             {/* contentful */}

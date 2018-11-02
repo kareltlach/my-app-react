@@ -1,23 +1,13 @@
 {
   "nodes": {
     "SitePage /dev-404-page/": {
-      "layout": "index",
-      "jsonName": "dev-404-page.json",
-      "internalComponentName": "ComponentDev404Page",
       "path": "/dev-404-page/",
-      "component": "/Users/karel/Documents/my-app/.cache/dev-404-page.js",
-      "componentChunkName": "component---cache-dev-404-page-js",
-      "context": {},
-      "pluginCreator___NODE": "Plugin dev-404-page",
-      "pluginCreatorId": "Plugin dev-404-page",
-      "componentPath": "/Users/karel/Documents/my-app/.cache/dev-404-page.js",
       "id": "SitePage /dev-404-page/",
       "parent": "SOURCE",
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "47f1bb3b93c0c2a76920443fb3adeee0",
-        "description": "Plugin dev-404-page",
+        "contentDigest": "f91d29e10ba680b413138cf9ed86e655",
         "owner": "internal-data-bridge"
       }
     },
@@ -463,6 +453,10 @@
             "version": "^5.2.0"
           },
           {
+            "name": "really-smooth-scroll",
+            "version": "^2.1.1"
+          },
+          {
             "name": "styled-components",
             "version": "^3.4.10"
           }
@@ -491,16 +485,14 @@
         "description": "UI/UX Designer, localizado em São Paulo, Brasil. Mais de 10 anos de experiência.",
         "keywords": "ui, ux, design, interface, arquitetura de informação, experiência do usuário, usuário, empatia, mapa de empatia, user experience"
       },
-      "port": "8000",
-      "host": "localhost",
       "pathPrefix": "",
       "polyfill": true,
-      "buildTime": "2018-11-02T03:52:39.574Z",
+      "buildTime": "2018-11-02T06:45:13.312Z",
       "id": "Site",
       "parent": "SOURCE",
       "children": [],
       "internal": {
-        "contentDigest": "15af2545c12221168acfe5657c01b05b",
+        "contentDigest": "e8cd9a2f3fe4b9cc8f26fe4e7ab7d77f",
         "type": "Site",
         "owner": "internal-data-bridge"
       }
@@ -566,6 +558,22 @@
       },
       "node_locale": "en-US"
     },
+    "c5Cq13diLTyAiQa286UY2aS": {
+      "title": "Portfolio",
+      "url": "/portifolio",
+      "id": "c5Cq13diLTyAiQa286UY2aS",
+      "contentful_id": "5Cq13diLTyAiQa286UY2aS",
+      "createdAt": "2018-11-02T05:27:13.919Z",
+      "updatedAt": "2018-11-02T05:27:13.919Z",
+      "parent": "Link",
+      "children": [],
+      "internal": {
+        "type": "ContentfulLink",
+        "contentDigest": "dbda65ebf0d48ee7d59ed8eaa6ac498f",
+        "owner": "gatsby-source-contentful"
+      },
+      "node_locale": "en-US"
+    },
     "SitePage /404/": {
       "layout": "index",
       "jsonName": "404.json",
@@ -582,7 +590,7 @@
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "9f2e587a805185f1c719f3eaf48b5ea3",
+        "contentDigest": "d252e17a29c5f10a5e290fa075065cfa",
         "description": "Plugin component-page-creator",
         "owner": "internal-data-bridge"
       }
@@ -603,7 +611,7 @@
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "dfcf66b4b1982b07b37b55f06e16819a",
+        "contentDigest": "ca6320cebe73082573c21ea1552fec05",
         "description": "Plugin component-page-creator",
         "owner": "internal-data-bridge"
       }
@@ -624,7 +632,7 @@
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "1fb8004c61da64d24db033ffca37b1e5",
+        "contentDigest": "59caf7a1927105cb69af28794c3b06c2",
         "description": "Plugin component-page-creator",
         "owner": "internal-data-bridge"
       }
@@ -645,7 +653,7 @@
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "8d2ed8a66e8712f62b30d2a1c925e9af",
+        "contentDigest": "5d7ba60b98896c7b1a1f85bcf72ecac5",
         "description": "Plugin prod-404",
         "owner": "internal-data-bridge"
       }
@@ -654,10 +662,10 @@
   "status": {
     "plugins": {
       "gatsby-source-contentful": {
-        "08oh62yt4msg-master": "w5ZGw6JFwqZmVcKsE8Kow4grw45QdyZ7wp3ClCnDnkEpfcKmwrnCpcO1w6nCiMO9TzR8UsOhw7ARccKgP8KcdFhxwrHCqnbCksOdwo7DkAwVw4DCiEBzQMOfwqLCoWnDosOtVcOLw63DhHMFGlkowrlFYg0qwoU"
+        "08oh62yt4msg-master": "w5ZGw6JFwqZmVcKsE8Kow4grw45QdybDqMOqw6HCs1HDuMKvw5Z_wpgFw6zDhMK5ccKScjvDrsO6w6HDq8KUAXnClcK1w4pVwqgQODvCrsOxwoPCukhCwpY6RcOqwoHDrU8idDFpeWvDm8KwNWXCqA7DrSTCuj5qw50"
       }
     },
-    "PLUGINS_HASH": "9e32f82b653273a0336e86a95b1ae107"
+    "PLUGINS_HASH": "d0ee7b54e2ecf1338a8f819205545245"
   },
   "componentDataDependencies": {
     "nodes": {

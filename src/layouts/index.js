@@ -21,7 +21,7 @@ const Layout = ({ children, data }) => (
       
       
       <Footer data={data}>
-        Precisa de ajuda? <a href="mailto:kareltlach@gmail.com">Fale comigo</a>
+        kareltlach.com - ui/ux designer
       </Footer>
   
     

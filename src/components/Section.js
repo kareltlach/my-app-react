@@ -38,8 +38,10 @@ const SectionTitleGroup = styled.div`
 `
 
 const SectionTitle = styled.h3`
+    width: 400px;
+    ${'' /* max-width: 800px; */}
     color: white;
-    font-size: 60px;
+    font-size: 56px;
     margin: 0 0 0 60px;
     line-height: 1.2;
  

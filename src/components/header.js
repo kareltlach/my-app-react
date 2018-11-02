@@ -38,10 +38,10 @@ class Header extends React.Component {
         <div className="HeaderGroup">
 
           <Link to="/"><img src={require('../images/logo-designcode.svg')} width="30" /></Link>
-          <AnchorLink href='#Sobre'>Sobre</AnchorLink>
-          <AnchorLink href='#Portifolio' offset='100'>Portifolio</AnchorLink>
-          <Link to="/experiencia">Experiência</Link>
-          <Link to="/contato"><button>Contato</button></Link>
+          <AnchorLink href='#sobre'>Sobre</AnchorLink>
+          <AnchorLink href='#portifolio' offset='100'>Portifolio</AnchorLink>
+          <AnchorLink href='#experiencia' offset='100'>Experiência</AnchorLink>
+          <Link to="mailto:kareltlach@gmail.com"><button>Contato</button></Link>
         </div>
       </div>
     )

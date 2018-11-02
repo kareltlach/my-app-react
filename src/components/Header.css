@@ -6,6 +6,7 @@ html, body {
     color: #233656;
     line-height: 1.4;
 }
+
 .Header {
     position: fixed;
     width: 100%;
@@ -46,7 +47,7 @@ html, body {
     padding: 8px 20px;
     font-size: 14px;
     font-weight: bold;
-    background-color: rgb(76, 183, 233);
+    background-color: rgb(126, 207, 245);
     color: rgb(10, 56, 77);
     border-radius: 20px;
     outline: none;
