@@ -8,14 +8,8 @@ import Cell from '../components/Cell'
 import CellExperiencia from '../components/CellExperiencia'
 
 import styled from 'styled-components'
-import ReallySmoothScroll from 'really-smooth-scroll';
-
 import staticdata from '../../staticdata.json'
 import staticdataexp from '../../staticdata-experiencia.json';
-
-// smooth scrool
-ReallySmoothScroll.shim();
-
 
 // css
 const SectionCaption = styled.p`

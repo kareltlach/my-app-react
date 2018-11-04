@@ -5,6 +5,10 @@ import Header from '../components/header'
 import './index.css'
 import Footer from '../components/Footer';
 
+import ReallySmoothScroll from 'really-smooth-scroll';
+// smooth scrool
+ReallySmoothScroll.shim();
+
 
 const Layout = ({ children, data }) => (
   <div>
