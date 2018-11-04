@@ -24,9 +24,9 @@ const Layout = ({ children, data }) => (
     {children()}
       
       
-      <Footer data={data}>
+      {/* <Footer data={data}>
         kareltlach.com - ui/ux designer
-      </Footer>
+      </Footer> */}
   
     
   </div>

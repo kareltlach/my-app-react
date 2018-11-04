@@ -1,13 +1,23 @@
 {
   "nodes": {
     "SitePage /dev-404-page/": {
+      "layout": "index",
+      "jsonName": "dev-404-page.json",
+      "internalComponentName": "ComponentDev404Page",
       "path": "/dev-404-page/",
+      "component": "/Users/karel/Documents/my-app/.cache/dev-404-page.js",
+      "componentChunkName": "component---cache-dev-404-page-js",
+      "context": {},
+      "pluginCreator___NODE": "Plugin dev-404-page",
+      "pluginCreatorId": "Plugin dev-404-page",
+      "componentPath": "/Users/karel/Documents/my-app/.cache/dev-404-page.js",
       "id": "SitePage /dev-404-page/",
       "parent": "SOURCE",
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "f91d29e10ba680b413138cf9ed86e655",
+        "contentDigest": "72cdae7eea7abd048d69a12aa1245686",
+        "description": "Plugin dev-404-page",
         "owner": "internal-data-bridge"
       }
     },
@@ -485,14 +495,16 @@
         "description": "UI/UX Designer, localizado em São Paulo, Brasil. Mais de 10 anos de experiência.",
         "keywords": "ui, ux, design, interface, arquitetura de informação, experiência do usuário, usuário, empatia, mapa de empatia, user experience"
       },
+      "port": "8000",
+      "host": "localhost",
       "pathPrefix": "",
       "polyfill": true,
-      "buildTime": "2018-11-04T20:12:13.714Z",
+      "buildTime": "2018-11-04T20:26:17.996Z",
       "id": "Site",
       "parent": "SOURCE",
       "children": [],
       "internal": {
-        "contentDigest": "b43d0e8a1520f9f026bf5218d2d5b0cf",
+        "contentDigest": "8d8f2f51eb7df00a6bdb718b81c689ce",
         "type": "Site",
         "owner": "internal-data-bridge"
       }
@@ -590,7 +602,7 @@
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "caaead8d4b75411a18c6b266a202a4b4",
+        "contentDigest": "5365ed53bfb38fec885e0de1af9f0cf5",
         "description": "Plugin component-page-creator",
         "owner": "internal-data-bridge"
       }
@@ -611,7 +623,7 @@
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "ec71c5fb1fe3cba6436ebe11f1e681d9",
+        "contentDigest": "623e5440b80b40e8fff59cf2046b7b44",
         "description": "Plugin component-page-creator",
         "owner": "internal-data-bridge"
       }
@@ -632,7 +644,7 @@
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "91e206257d9f673f49f3d1c1c0732609",
+        "contentDigest": "668811bf0fb404b5cb40658b00f10719",
         "description": "Plugin component-page-creator",
         "owner": "internal-data-bridge"
       }
@@ -653,7 +665,7 @@
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "f9830dfa0a4b63f730e826691c3ea785",
+        "contentDigest": "5bcf3e82169b56219a9166705819e58c",
         "description": "Plugin prod-404",
         "owner": "internal-data-bridge"
       }

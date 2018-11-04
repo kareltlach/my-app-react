@@ -127,10 +127,14 @@ const IndexPage = () => (
     
     {/* <SectionCaption>processos e metodologias</SectionCaption> */}
     <SectionCellGroup>
+    
+
+      const celltraz = [1, 2, 3];
+
       {/* json */}
       {staticdata.cells.map(cell => (
         <Cell title={cell.title} image={cell.image} text={cell.text}  />
-      ))}
+      ))} 
     </SectionCellGroup>
 
     {/* experiência */}
